@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Classroom Manager</title>
+</head>
+<body>
+    <header>
+        <h1 class="main-title">Classroom Manager</h1>
+        <button onclick="colorMainTitle()">Colora titolo</button>
+    </header>
+    <main>
+        <ul id="student-list">
+            <!-- <li>
+                <button class="remove-btn"><img src="./assets/4x-1.gif" class="remove-img" alt="bottone"></button>    
+            </li> -->
+        </ul>
+        <button onclick="shuffleTheClassroom()">Shuffle Time!</button>
+        <div class="addNew">
+            <h3>Add a new student:</h3>
+            <div>
+                <span>Name</span>
+                <input type="text" id="student-name">
+            </div>
+            <div>
+                <span>Surname</span>
+                <input type="text" id="student-surname">
+            </div>
+            <div class="empty"></div>
+            <div class="birthDate">
+                <span>Month (mm): </span>
+                <input type="text" id="student-moB">
+                <span>Day (dd): </span>
+                <input type="text" id="student-doB">
+                <span>Year (yyyy): </span>
+                <input type="text" id="student-yoB">
+            </div>
+            <button id="addStudentButton" onclick="addStudentToClassroom()">Add this student!</button>
+        </div>
+    </main>
+    
+    <footer>
+        <p>This program was written in order to create a Classroom Manager</p>
+        <br>
+        <p>Code written by SunshineMocha & Simone Maccarone</p>
+    </footer>
+</body>
+<script src="./student.js"></script>
+<script src="./classroom.js"></script>
+<script src="./main.js"></script>
+<!-- <script src="./sort.js"></script> -->
+</html>
